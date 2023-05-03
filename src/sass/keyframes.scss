@@ -1,0 +1,169 @@
+@keyframes overlayAppear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.6;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes moveRight {
+    from {
+        left: -340px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes moveLeft {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -340px;
+    }
+}
+
+@keyframes slide14 {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 14px;
+    }
+}
+
+@keyframes slide14reverse {
+    from {
+        top: 14px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes slide65 {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 65px;
+    }
+}
+
+@keyframes textBounce {
+    0% {
+        top: 75px;
+    }
+
+    70% {
+        top: 0;
+    }
+
+    100% {
+        top: 10px
+    }
+}
+
+@keyframes slide65reverse {
+    from {
+        top: 65px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes slide700 {
+    from {
+        top: 700px;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+@keyframes moveToSides {
+    from {
+        gap: 0;
+    }
+
+    to {
+        gap: 7px;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes imageAnim {
+    from {
+        margin: 61px 0 21px;
+        opacity: 0;
+    }
+
+    to {
+        margin: 41px 0;
+        opacity: 1;
+    }
+}
+
+@keyframes imageDisappear {
+    from {
+        margin: 41px 0;
+        opacity: 1;
+    }
+
+    to {
+
+        margin: 61px 0 21px;
+        opacity: 0;
+    }
+}
+
+@keyframes cardSlideOut {
+    from {
+        top: 0;
+    }
+
+    to {
+        top: 700px;
+        display: none;
+    }
+}

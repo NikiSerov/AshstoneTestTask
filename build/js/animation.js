@@ -1,0 +1,1 @@
+"use strict";$(".card-main__text").on("mouseenter",(function(e){$(e.target).parents(".card").addClass("show")})),$(".card").on("mouseleave",(function(e){$(e.currentTarget).addClass("hideAnim"),setTimeout((function(){$(e.currentTarget).removeClass("hideAnim"),$(e.currentTarget).removeClass("show")}),850)}));
