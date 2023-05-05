@@ -3,6 +3,7 @@ const burgerBtn = document.querySelector(".header__burger");
 const closeNavBtn = document.querySelector(".mob-nav-header__close-btn");
 const nav = document.querySelector(".navigation");
 const navElements = document.querySelectorAll(".navigation__element");
+const navBtns = document.querySelectorAll(".navigation__btn");
 const subMenus = document.querySelectorAll(".subnav");
 const screenWidthInPx = window.innerWidth;
 const overlay = document.querySelector(".overlay");
@@ -48,7 +49,8 @@ const closeMenuOutsideClick = (e) => {
   }
 };
 
-const openSubMenu = (el) => {
+const toggleSubMenu = (btn) => {
+  const el = btn.parentNode;
   if (el.classList.contains("active")) {
     el.classList.remove("active");
     el.querySelector(".subnav").style.height = "";
@@ -74,7 +76,7 @@ if (screenWidthInPx <= 840) {
   document.addEventListener("click", closeMenuOutsideClick);
   closeNavBtn.addEventListener("click", closeMobileMenu);
   burgerBtn.addEventListener("click", openMobileMenu);
-  navElements.forEach((el) => {
-    el.addEventListener("click", () => openSubMenu(el));
+  navBtns.forEach((btn) => {
+    btn.addEventListener("click", () => toggleSubMenu(btn));
   });
 }
